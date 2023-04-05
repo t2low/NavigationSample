@@ -27,10 +27,24 @@ class NextViewController: UIViewController {
     @IBAction private func tappedButton1() {
         let vc = NextViewController.make(label: "push", level: level + 1)
         navigationController?.pushViewController(vc, animated: true)
+        if navigationController == nil { print("navigationController == nil") }
     }
 
     @IBAction private func tappedButton2() {
         let vc = NextViewController.make(label: "present", level: level + 1)
         navigationController?.present(vc, animated: true)
+        if navigationController == nil { print("navigationController == nil") }
+    }
+
+    @IBAction private func tappedButton3() {
+        let vc = NextViewController.make(label: "presentingVC::push", level: level + 1)
+        presentingViewController?.navigationController?.pushViewController(vc, animated: true)
+        if presentingViewController == nil {
+            print("presentingViewController == nil")
+        } else {
+            if presentingViewController?.navigationController == nil {
+                print("presentingViewController.navigationController == nil")
+            }
+        }
     }
 }

@@ -26,7 +26,7 @@
                                 <rect key="frame" x="16" y="451" width="358" height="327"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqz-Jt-xAf">
-                                        <rect key="frame" x="0.0" y="0.0" width="358" height="159.33333333333334"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="103.66666666666667"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Push"/>
                                         <connections>
@@ -34,11 +34,19 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bs5-aR-G3P">
-                                        <rect key="frame" x="0.0" y="167.33333333333337" width="358" height="159.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="111.66666666666663" width="358" height="103.66666666666669"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Present"/>
                                         <connections>
                                             <action selector="tappedButton2" destination="Y6W-OH-hqX" eventType="touchUpInside" id="W1G-lc-0DI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44M-GD-0hr">
+                                        <rect key="frame" x="0.0" y="223.33333333333334" width="358" height="103.66666666666666"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="presentingVC::push"/>
+                                        <connections>
+                                            <action selector="tappedButton3" destination="Y6W-OH-hqX" eventType="touchUpInside" id="a8W-te-UXw"/>
                                         </connections>
                                     </button>
                                 </subviews>
