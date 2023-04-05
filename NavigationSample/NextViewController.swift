@@ -10,15 +10,22 @@ import UIKit
 class NextViewController: UIViewController {
     @IBOutlet private weak var label: UILabel!
     private var text: String = ""
+    private var level: Int = 0
 
-    static func make(label: String) -> NextViewController {
+    static func make(label: String, level: Int) -> NextViewController {
         let storyboard = UIStoryboard(name: "NextViewController", bundle: .main)
         let vc = storyboard.instantiateViewController(withIdentifier: "NextViewController") as! NextViewController
         vc.text = label
+        vc.level = level
         return vc
     }
 
     override func viewDidLoad() {
-        label.text = text
+        label.text = "\(text): \(level)"
+    }
+
+    @IBAction private func tappedButton1() {
+        let vc = NextViewController.make(label: "push", level: level + 1)
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

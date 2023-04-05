@@ -17,17 +17,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boU-Wh-d2J">
-                                <rect key="frame" x="166.66666666666666" y="414" width="57" height="29"/>
+                                <rect key="frame" x="166.66666666666666" y="414.33333333333331" width="56.666666666666657" height="28.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="v6D-d5-bma">
+                                <rect key="frame" x="16" y="451" width="358" height="327"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqz-Jt-xAf">
+                                        <rect key="frame" x="0.0" y="0.0" width="358" height="327"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Push"/>
+                                        <connections>
+                                            <action selector="tappedButton1" destination="Y6W-OH-hqX" eventType="touchUpInside" id="a84-iO-aYa"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="v6D-d5-bma" firstAttribute="top" secondItem="boU-Wh-d2J" secondAttribute="bottom" constant="8" symbolic="YES" id="5Ti-tJ-wEy"/>
+                            <constraint firstItem="v6D-d5-bma" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="Csz-45-fcx"/>
                             <constraint firstItem="boU-Wh-d2J" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="LLL-TI-LA8"/>
                             <constraint firstItem="boU-Wh-d2J" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="N3i-Wo-ewS"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="v6D-d5-bma" secondAttribute="bottom" constant="32" id="afi-RU-MIM"/>
+                            <constraint firstItem="v6D-d5-bma" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" constant="-32" id="xEH-Dc-8kX"/>
                         </constraints>
                     </view>
                     <connections>
