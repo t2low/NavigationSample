@@ -28,4 +28,9 @@ class NextViewController: UIViewController {
         let vc = NextViewController.make(label: "push", level: level + 1)
         navigationController?.pushViewController(vc, animated: true)
     }
+
+    @IBAction private func tappedButton2() {
+        let vc = NextViewController.make(label: "present", level: level + 1)
+        navigationController?.present(vc, animated: true)
+    }
 }
