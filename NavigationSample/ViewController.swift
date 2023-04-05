@@ -14,6 +14,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction private func tappedPush(sender: UIButton) {
+        let vc = NextViewController.make(label: "push")
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
